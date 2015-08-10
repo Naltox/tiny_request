@@ -95,6 +95,6 @@ req.post({ url: 'http://test.com', form: form}, function(body, response, err){
 ## Stream
 
 ```js  
-net.get({url: url, pipe: stream}) 
+req.get({url: url, pipe: stream}) 
 ```
 
