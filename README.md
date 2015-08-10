@@ -16,9 +16,9 @@ req.get('http://google.com', function(body, response, err){
 
 - [JSON](#json)
 - [GET](#get)  
-- [POST Multipart](#post_multipart)
-- [POST Froms](#post_froms)
-- [Stream](#post)
+- [POST Multipart](#postmultipart)
+- [POST Froms](#postfroms)
+- [Stream](#Stream)
  
 ## JSON
 
