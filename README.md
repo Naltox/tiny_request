@@ -18,6 +18,7 @@ req.get('http://google.com', function(body, response, err){
 - [GET](#get)  
 - [POST Multipart](#post-multipart)
 - [POST Froms](#post-forms)
+- [Custom HTTP Headers](#custom-http-headers)
 - [Stream](#stream)
  
 ## JSON
@@ -86,6 +87,20 @@ var form = {
 }
 
 req.post({ url: 'http://test.com', form: form}, function(body, response, err){
+	if (!err && response.statusCode == 200) {  
+		console.log(body) 
+	} 
+})
+```
+
+## Custom HTTP Headers
+
+```js 
+var headers = {
+	'Test-Header': 'test'
+}
+
+req.post({ url: 'http://test.com', headers: headers}, function(body, response, err){
 	if (!err && response.statusCode == 200) {  
 		console.log(body) 
 	} 
