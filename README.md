@@ -1,5 +1,8 @@
 Tiny module for http requests with no dependencies
 
+## Install
+npm install tiny_request
+
 ## Simple to use
 
 
