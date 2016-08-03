@@ -96,6 +96,20 @@ req.post({ url: 'http://test.com', form: form}, function(body, response, err){
 })
 ```
 
+## POST Json
+
+```js 
+var data = {
+	test: 'test'
+}
+
+req.post({ url: 'http://test.com', jsonData: data}, function(body, response, err){
+	if (!err && response.statusCode == 200) {  
+		console.log(body) 
+	} 
+})
+```
+
 ## Custom HTTP Headers
 
 ```js 
