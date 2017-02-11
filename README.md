@@ -23,6 +23,7 @@ req.get('http://google.com', function(body, response, err){
 - [POST Froms](#post-forms)
 - [Custom HTTP Headers](#custom-http-headers)
 - [Stream](#stream)
+- [Timeout](#timeout)
  
 ## JSON
 
@@ -130,3 +131,10 @@ req.post({ url: 'http://test.com', headers: headers}, function(body, response, e
 req.get({url: url, pipe: stream}) 
 ```
 
+## Timeout
+
+```js
+req.get({url: url, timeout: 1000})
+
+Request will be aborted after 1 second if there is no response from server
+```
